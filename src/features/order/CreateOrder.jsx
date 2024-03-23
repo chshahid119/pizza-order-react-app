@@ -44,12 +44,12 @@ function CreateOrder() {
   const cart = fakeCart;
 
   return (
-    <div>
-      <h2>Ready to order? Lets go!</h2>
+    <div className="px-4 py-6">
+      <h2 className="text-xl font-semibold mb-8">Ready to order? Lets go!</h2>
 
       <Form method="POST">
-        <div>
-          <label>First Name</label>
+        <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center">
+          <label className="sm:basis-40">First Name</label>
           <input className="input" type="text" name="customer" required />
         </div>
 
