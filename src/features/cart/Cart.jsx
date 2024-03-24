@@ -30,7 +30,8 @@ const fakeCart = [
 
 function Cart() {
   const username = useSelector((state) => state.user.username);
-  const cart = fakeCart;
+  const cart = useSelector((state) => state.cart.cart);
+  console.log(cart);
 
   return (
     <div className="py-3 px-4 ">
@@ -40,7 +41,7 @@ function Cart() {
 
       <ul className="divide-y divide-stone-200 border-b mt-3">
         {cart.map((item) => (
-          <CartItem item={item} key={item.key} />
+          <CartItem item={item} key={item.pizzaId} />
         ))}
       </ul>
 
