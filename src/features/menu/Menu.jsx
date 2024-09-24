@@ -1,14 +1,9 @@
-import { useLoaderData } from "react-router-dom";
-import { getMenu } from "../../services/apiRestaurant";
-import MenuItem from "./MenuItem";
-// import { useSelector } from "react-redux";
+import { useLoaderData } from 'react-router-dom';
+import { getMenu } from '../../services/apiRestaurant';
+import MenuItem from './MenuItem';
 
 function Menu() {
   const menu = useLoaderData();
-  // const username = useSelector((state) => state.user.username);
-  // console.log(username);
-
-  // if (username === "") return null;
 
   return (
     <ul className="divide-y divide-stone-200 px-2">

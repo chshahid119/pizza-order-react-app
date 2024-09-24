@@ -1,3 +1,4 @@
 module.exports = {
-  tailwindAttributes: ["myClassList"],
+  plugins: [require('prettier-plugin-tailwindcss')],
+  singleQuote: true,
 };
